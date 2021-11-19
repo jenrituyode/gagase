@@ -28,24 +28,3 @@ workflows:
   commit: 
     jobs: 
       - build1 
-      
-  schedule:
-    triggers:
-      - schedule:
-          cron: "25 1 * * *"
-          filters:
-            branches:
-              only:
-                - master
-  
-  schedule:
-    triggers:
-      - schedule:
-          cron: "25 1 * * *"
-          filters:
-            branches:
-              only:
-                - master
-  
-  jobs:
-      - build1
